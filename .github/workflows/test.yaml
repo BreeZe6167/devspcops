@@ -34,7 +34,7 @@ jobs:
 
   generatesbom:
     runs-on: ubuntu-latest
-    name: depecheck_test
+    name: generate_sbom
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v3
