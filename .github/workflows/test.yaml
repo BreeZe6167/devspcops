@@ -33,7 +33,6 @@ jobs:
            path: ${{github.workspace}}/reports
 
   generatesbom:
-    depchecktest:
     runs-on: ubuntu-latest
     name: depecheck_test
     steps:
@@ -52,3 +51,4 @@ jobs:
         with:
             ame: sbom
             path: sbom.txt  # 上傳SBoM文件
+    
