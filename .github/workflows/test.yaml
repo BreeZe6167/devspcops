@@ -53,9 +53,11 @@ jobs:
             path: sbom.txt  # 上傳SBoM文件
 
   build_and_push:
+    
     name: Build & Push to DockerHub
     needs: slscan
     runs-on: ubuntu-latest
+    
     steps: 
       - uses: actions/checkout@v4 
       - uses: actions/setup-java@v3
